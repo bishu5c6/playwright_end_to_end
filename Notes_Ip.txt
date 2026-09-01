@@ -1,0 +1,136 @@
+Playwright:
+------------ 
+It supports both web and API applications.
+
+Web & API automation:
+--------------------
+
+Python - It is a programming language
+Pytest -- Testing framework developed using python
+TestNG -- Testing framework developed using JAVA.
+
+
+Playwright is available as a plugin on top of pytest.
+
+pre-requisite to work with playwright
+----------------------------------------
+Python 
+Pytest &
+playwright
+
+How to install playwright:
+--------------------------
+1. Playwright supports multiple languages.
+
+
+pip install pytest-playwright(we can wright automation test-cases).
+
+It will install the pytest playwright.
+
+2. Install playwright browsers.
+-------------------------------
+chrom - chromium
+Edge - chromium
+Firefox - firefox
+Safari - webkit
+
+They are worked on Engines
+
+In playwright we have to install those engines.
+
+	 playwright install  -> Helps in works with browsers.
+
+after installing the pytest-playwright you have to install
+playwright.
+
+Naming conventions:
+--------------------
+The file name and the test name should start with the name test.
+
+what's the different between sync and async api while importing plawright.
+
+By default playwright will open chromium browser.
+
+fixture always starts with the lower case letters.
+
+
+Different types of running can be done by using command prompt.
+
+modes of execution:
+------------------
+1) headless - no ui will be shown.
+2) headed - Ui will be shown. with all the interactions.
+
+By default it runs in headless format.
+
+How to run the browser:
+-----------------------
+pytest -v -s --headed
+
+
+Synchronous vs Asynchronous:
+-----------------------------
+If you have multiple task it will complete all the tasks in sequential manner.(1,2,3,4..
+
+if you have multiple tasks the excecution completes in parallel manner.(1,4,2,3,6,..)
+
+whenever you are using Asynchronous you have to use await keyword in it.
+if you don't have asynchronous in it will throw an error.
+
+In order to run the aysnchronous you have to install below command.
+
+pip install pytest-asyncio
+
+How run the code in different browsers.
+-------------------------------------------
+1_) pytest -v -s file_name.py --headed --browser firefox.
+
+2 ) pytest -v -s file_name.py --headed --browser firefox --browswer chromium.
+
+to execute them in parallel mode.
+----------------------------------
+
+pytest -v -s file_name.py --headed --browser firefox --numprocesses 2
+
+
+
+
+Locators:
+------------
+
+1) Identifying/ locating the web elements.
+2) Perfroming actions
+3) Validations
+
+Locating the elements:
+----------------------
+1. everything that present in the web page is a element.
+ex: add to cart, purchase, export, login buttons,
+These can be done by using identifying/ locating using elements.
+
+different types of finding locators:
+-------------------------------------
+1) playwright built-in locators.(1st prior complex elements can't find(ex: iframes, nested frames).
+2) xpath
+3) CSS (so we use CSS as 1st priority).
+
+Below are some playwright built in locators:
+---------------------------------------------
+page.getByRole() to locate by explicit and implicit accessibility attributes.
+page.getByText() to locate by text content.
+page.getByLabel() to locate a form control by associated label's text.
+page.getByPlaceholder() to locate an input by placeholder.
+page.getByAltText() to locate an element, usually image, by its text alternative.
+page.getByTitle() to locate an element by its title attribute.
+page.getByTestId() to locate an element based on its data-testid attribute (other attributes can be configured).
+
+
+Whenever you are browsing the webpage the DOM will be created by the browser.
+What is DOM?
+When you inspect you are getting code.
+The code is called DOM.
+IT was created by the browser itself.
+
+Note: In selenium we call it has a web element but here we call it as a locators in playwright.
+
+In playwright default browser is chromium and default mode is headless mode.
