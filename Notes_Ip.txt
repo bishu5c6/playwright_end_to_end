@@ -126,7 +126,8 @@ page.getByTestId() to locate an element based on its data-testid attribute (othe
 
 
 Whenever you are browsing the webpage the DOM will be created by the browser.
-What is DOM?
+What is DOM?(Documnet object Model)
+----------------------------------
 When you inspect you are getting code.
 The code is called DOM.
 IT was created by the browser itself.
@@ -134,3 +135,26 @@ IT was created by the browser itself.
 Note: In selenium we call it has a web element but here we call it as a locators in playwright.
 
 In playwright default browser is chromium and default mode is headless mode.
+
+
+How to install playwright?
+---------------------------
+1) pip install pytest-playwright.
+
+after that you have to install the browsers.
+
+2) playwright install.
+
+CSS - cascading style sheet.
+-----------------------------
+Helps in find the locators.
+
+Tag with ID 			tag#id
+Tag with Class 			tag.classname
+Tag with Attribute 		tag[attribute="value"]
+Tag with Class and Attribute 	tag.classname[attribute="value"]
+
+
+
+
+

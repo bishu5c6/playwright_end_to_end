@@ -1,0 +1,102 @@
+CSS Locator:
+-------------
+We can find elements using CSS locators:
+----------------------------------------
+
+By using selectors hub we can find the CSS Locator.
+---------------------------------------------------
+
+How to write manually CSS Selectors?
+
+Helps in find the locators.
+
+Tag with ID 			tag#id
+Tag with Class 			tag.classname
+Tag with Attribute 		tag[attribute="value"]
+Tag with Class and Attribute 	tag.classname[attribute="value"]
+
+Class: when there is space between class we can take it as a two classes.
+example:
+---------
+
+class = "gh-tg  ui-ajh-jija"
+
+you can take gh-tg as one class
+	and
+ui-ajh-jija has another class.
+
+Multi-level Selectors:
+----------------------
+List of elements of multiple tags how to test them
+
+We can navigate from one element to another element using '>' symbol or space
+
+Absolute CSS:
+--------------
+Finding elements from the root node is called absolute CSS.
+suppose title tag in order to fiing that you have to use.
+
+html>body>title like that you have construct the tag from starting point is 
+called absolut css.
+
+html>body>title>p[id = "1"]
+
+
+body h1[class="white-clr"] - xpath for companies
+
+What's the difference between > and space in CSS selector?
+-----------------------------------------------------------
+1. When we use > it will navigate through the first node
+2. When we use space it will navigate to exact tag for that location.
+
+In case of multiple tags:
+-------------------------
+When we have multiple tag names with same name you have to use *;
+
+body>div>*;first-child 
+
+If you want to specify the number
+----------------------------------
+body>div>*;nth-child(4)
+
+Starts with:
+-------------
+p[class^='ma']
+
+^ -starts with
+
+Ends with:
+---------
+when you want to work with end characters you have to use $ symbol.
+
+p[class$='ma']
+
+When you use * symbol it will take it as starts, ends, and middle all comes
+when you use * symbol
+
+p[class*='ma']
+
+similarly we cane use and or not here:
+---------------------------------------
+p:not([id='para1'])
+
+ex:2-
+----
+p:not([id='para1']):not([class='no'])
+
+
+
+Selected all attributes and metrics, and in the Timeline, 
+selected all in Year. However, when exporting, it showed 'No Data' in all scenarios.
+
+
+
+
+
+
+
+
+
+
+
+
