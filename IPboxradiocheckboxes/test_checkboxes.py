@@ -10,7 +10,7 @@ def test_checkbox(page:Page):
     # sunday_checkbox.check()
     # expect(sunday_checkbox).to_be_checked()
     # page.wait_for_timeout(5000)
-
+    #page.get_by_label is an input function.
     #2. count number of check boxes
 
     #step1:
